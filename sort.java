@@ -17,10 +17,20 @@ public class sort{
   }
   }
 
+  public static void bubbleSort(int [] ary){
+    for(int i = 0; i < ary.length;i++){
+      if (ary[i] > ary[i+1]){
+      int temp = ary[i];
+      ary[i] = ary[i+1];
+      ary[i+1] = temp;
+    }
+  }
+}
+
   public static void main(String[] args){
     int[] test;
     if (args.length == 1){
-      test = new int[Integer.parseInt(arg[0])];
+      test = new int[Integer.parseInt(args[0])];
       for(int i = 0; i < test.length;i++){
       }
     }
