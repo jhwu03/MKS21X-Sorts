@@ -29,6 +29,18 @@ public class Sorts{
   }
 }
 
+  public static void insertionSort(int[] ary){
+    for (int i = 0; i < ary.length;i++){
+      int original = ary[i];
+      int a = i;
+      while(a > 0 && ary[a - 1] > original){
+        ary[a] = ary[a - 1];
+        a = a - 1;
+      }
+      ary[a] = original;
+    }
+  }
+
    public static void main(String[] args){
   //   int[] test;
   //   if (args.length == 1){
