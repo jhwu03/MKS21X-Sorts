@@ -18,14 +18,17 @@ public class Sorts{
   }
 
   public static void bubbleSort(int[] ary){
+    boolean Sorted = false;
     for(int i = 0; i < ary.length;i++){
-    for(int n = 0; n < ary.length - 1;n++){
-      if (ary[n] > ary[n+1]){
-      int temp = ary[n];
-      ary[n] = ary[n+1];
-      ary[n+1] = temp;
-    }
-  }
+      while (!Sorted){
+        for(int n = 0; n < ary.length - (1+i);n++){
+          if (ary[n] > ary[n+1]){
+          int temp = ary[n];
+          ary[n] = ary[n+1];
+          ary[n+1] = temp;
+        }
+      }
+      }
   }
 }
 
